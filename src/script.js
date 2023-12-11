@@ -1,4 +1,4 @@
-const select = document.querySelector("select");
+const select = document.getElementById("select");
 const para = document.querySelector("p");
 
 select.addEventListener("change", changeFamily);
