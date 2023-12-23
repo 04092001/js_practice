@@ -30,6 +30,7 @@ let wordTwo = "Guardiola";
 console.log(lastLetter(wordOne));
 console.log(lastLetter(wordTwo));
 
+// A function that takes a string and returns the last two letters
 function lastTwoLetters(word) {
   return word.slice(-2);
 }
@@ -39,3 +40,20 @@ let example2 = "Haaland";
 
 console.log(lastTwoLetters(example1));
 console.log(lastTwoLetters(example2));
+
+// An arrow function that returns "Hello World!" at the click of a button
+let button = document.getElementById("button");
+
+let helloWorld = () => alert("Hello World!");
+button.addEventListener("click", helloWorld);
+
+// Experimenting with functions. Text appears on click of a button, and disappears with the click of another button
+let myBtn = document.getElementById("myBtn");
+let resetBtn = document.getElementById("resetBtn");
+let para = document.querySelector("p");
+
+let showMessage = () => (para.textContent = "Hello World");
+let resetMessage = () => (para.textContent = " ");
+
+myBtn.addEventListener("click", showMessage);
+resetBtn.addEventListener("click", resetMessage);
