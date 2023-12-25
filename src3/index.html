@@ -3,12 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        margin: 30px 10px;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    </style>
     <title>My Own Script</title>
   </head>
   <body>
-    <button id="button">Click Me</button> <br />
-    <button id="myBtn">Click Me</button><button id="resetBtn">Reset</button>
-    <p id="para"></p>
-    <script type="text/javascript" src="script.js"></script>
+    <div>
+      <button id="button">Click Me for an Alert</button>
+      <br />
+      <button id="myBtn">Set</button><button id="resetBtn">Reset</button>
+      <br />
+      <button id="jsInfo">Press this button</button>
+      <button id="checkAgeBtn">Check Age</button>
+    </div>
+    <form>
+      <label for="text_box">Type here to log in console</label
+      ><input id="text_box" type="text" />
+    </form>
+    <div>
+      <p id="para"></p>
+      <script type="text/javascript" src="script.js"></script>
+    </div>
   </body>
 </html>

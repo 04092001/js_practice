@@ -57,3 +57,78 @@ let resetMessage = () => (para.textContent = " ");
 
 myBtn.addEventListener("click", showMessage);
 resetBtn.addEventListener("click", resetMessage);
+
+// Function Parameters
+function message(from, text) {
+  return from + ":" + text;
+}
+
+console.log(message("Freddie", " Hello World! "));
+
+// Default Values
+function messageTwo(parameterOne, parameterTwo = "default value") {
+  return parameterOne + " + " + parameterTwo;
+}
+
+console.log(messageTwo("example"));
+console.log(messageTwo("example", undefined));
+
+// Function Expressions
+
+let addTwo = function (num1, num2) {
+  return num1 + num2;
+};
+
+console.log(addTwo(3, 7));
+
+let addThree = (numberOne, numberTwo, numberThree) =>
+  numberOne + numberTwo + numberThree;
+
+console.log(addThree(11, 11, 11));
+
+// Javascript.info example
+let btn = document.getElementById("jsInfo");
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+btn.addEventListener("click", function () {
+  ask(
+    "Can you press one of the buttons below?",
+    function () {
+      alert("You pressed OK");
+    },
+    function () {
+      alert("You pressed cancel");
+    }
+  );
+});
+
+// Add and divide
+let addDivide = (x, y, z) => (x + y) / z;
+
+console.log(addDivide(4, 5, 3));
+
+// Ternary Operator
+document.getElementById("checkAgeBtn").addEventListener("click", function () {
+  let age = prompt("How old are you?", 18);
+
+  let welcome =
+    age >= 18
+      ? function () {
+          alert("18 or over");
+        }
+      : function () {
+          alert("Under 18");
+        };
+
+  welcome();
+});
+
+// Anonymous functions
+
+addEventListener("keydown", function (keyPressed) {
+  console.log(`You pressed "${keyPressed.key}."`);
+});
