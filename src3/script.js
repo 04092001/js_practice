@@ -128,7 +128,43 @@ document.getElementById("checkAgeBtn").addEventListener("click", function () {
 });
 
 // Anonymous functions
+let inputBox = document.getElementById("text_box");
 
-addEventListener("keydown", function (keyPressed) {
-  console.log(`You pressed "${keyPressed.key}."`);
+inputBox.addEventListener("keydown", function (keyPressed) {
+  console.log(`You pressed "${keyPressed.key}"`);
 });
+``;
+
+// FizzBuzz
+document.getElementById("fizzBtn").addEventListener("click", function () {
+  let answer = parseInt(prompt("Input a number"));
+
+  for (let i = 1; i <= answer; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+});
+
+// For Loops
+for (let x = 10; x <= 20; x++) {
+  console.log(x);
+}
+
+// For Loop: first 10 squared numbers
+for (let number = 0; number <= 10; number++) {
+  let squared = number * number;
+  console.log(squared);
+}
+
+// For Loop: first 10 cubed numbers
+for (let num = 0; num <= 10; num++) {
+  let cubed = num * num * num;
+  console.log(cubed);
+}
