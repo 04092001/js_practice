@@ -81,3 +81,62 @@ for (const person of people) {
 
 refused.textContent = refused.textContent.slice(0, -2) + ".";
 admitted.textContent = admitted.textContent.slice(0, -2) + ".";
+
+// Odd Numbers
+
+let x = 0;
+
+for (; x < 10; x++) {
+  if (x % 2 == 1) {
+    console.log(x);
+  }
+}
+
+// while...
+
+let y = 0;
+
+while (y < 7) {
+  console.log(y);
+  y++;
+}
+
+// do..while
+
+let z = 0;
+do {
+  console.log(z);
+  z++;
+} while (z <= 3);
+
+// break
+
+let a = 0;
+for (; a <= 10; a++) {
+  if (a == 4) break;
+  console.log(a);
+}
+
+let c = 0;
+while (c < 10) {
+  console.log(c);
+  if (c == 4) break;
+  c++;
+}
+
+let d = 20;
+do {
+  console.log(d);
+  if (d == 25) break;
+  d++;
+} while (d <= 30);
+
+// continue
+
+let b = 0;
+for (; b <= 10; b++) {
+  if (b == 4) continue;
+  console.log(b);
+}
+
+// labelling continue
