@@ -1,3 +1,5 @@
+// Completely Unorganised Javascript Practice
+
 //   In this exercise, we want you to print out a simple launch countdown to the output box, from 10 down to Blastoff. Specifically, we want you to:
 
 // Loop from 10 down to 0. We've provided you with an initializer — let i = 10;.
@@ -135,8 +137,28 @@ do {
 
 let b = 0;
 for (; b <= 10; b++) {
-  if (b == 4) continue;
+  if (b == 4 || b == 5) continue;
   console.log(b);
 }
 
+let f = 0;
+while (f < 10) {
+  f++;
+  if (f == 8) continue;
+  console.log(f);
+}
+
+let g = 0;
+do {
+  g++;
+  if (g == 3 || g == 4) continue;
+  console.log(g);
+} while (g < 10);
+
 // labelling continue
+
+// Array.at
+
+const array1 = ["De Bruyne", "Haaland", "Aguero"];
+
+console.log(array1.at(1));
